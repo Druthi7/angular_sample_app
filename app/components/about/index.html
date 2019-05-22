@@ -1,0 +1,23 @@
+<html ng-app="myApp">
+    <head>            
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="module.js"></script>
+    </head>
+    
+    <body>
+    <!-- flower brackets are called binding expressions the one in brackets wil be executed--> 
+     <h1>
+     {{1+2}}
+    </h1>
+    <div ng-controller="MyController">
+            <input type = "text" ng-model="message">
+        </input> 
+        {{message}}
+    </div>
+        <div ng-controller="Student">
+            First Name: {{Student.FirstName}}
+            <br>
+            Last Name : {{Student.LastName}}
+        </div>
+    </body>
+</html>
